@@ -54,7 +54,9 @@ encore secret set --type local,dev,pr,prod SlackWebhookURL
 
 ## View the frontend
 
-While `encore run` is running, head over to [http://localhost:4000/](http://localhost:4000/) to view the frontend for your uptime monitor.
+While `encore run` is running, head over to [http://localhost:4000/](http://localhost:4000/) to view the product landing page, and [http://localhost:4000/dashboard](http://localhost:4000/dashboard) for the uptime monitoring dashboard.
+
+The landing page lives in `frontend/app/page.tsx` with its components and styles in `frontend/app/landing/`. Its "Try it now" box calls the real `/ping` endpoint.
 
 ## Using the API
 
